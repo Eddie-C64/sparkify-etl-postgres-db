@@ -15,7 +15,7 @@ It should be noted that etl.ipynb and test.ipynb are optional for the code to ru
 ## Database Design.
 In this particular database it was decided to use a SQL database since we know the business requirements wont' be changing often.
  The best choice was to use a star schema and keep things simple where the songplay table is the fact table and the dimension tables are the users, songs, time and artists.
- ![](db-diagram.png)
+ ![](db-diagram.png)(https://dbdiagram.io/d/5d700b0083427516dc0b5763)
 ## ETL Process (pipeline).
 0. Drop all existing database tables of Songs, Artists, Songplays, Users, and Time tables in Sparkifysdb.
 1. Create Sparkifydb database and tables for the database.
@@ -27,6 +27,6 @@ In this particular database it was decided to use a SQL database since we know t
 1. In the directory there is virtual environment named venv. Activate it and run `. venv/bin/activate`.
 2. Then run `python create_tables.py` to create the tables first.
 3. Run `python etl.py`. This load the json files and load them into the created tables.
-4. (Optional) is run the test.ipynb notebook to check if all the tables were created properly. 
+4. (Optional) is run the test.ipynb notebook to check if all the tables were created properly.
 
 #### Created by [Eduardo Carrasco Jr](https://www.linkedin.com/in/eduardo-carrasco-99314990/)
