@@ -3,6 +3,10 @@ This project consist of the following concepts:
 - Data modeling with Postgres SQL database.
 - Database star schema creation
 - ETL pipeline using python
+## Requirements are to have:
+- psycopg2
+- pandas
+
 ## Project files.
 The following files are listed as being required for the code to run.
 - etl.py
